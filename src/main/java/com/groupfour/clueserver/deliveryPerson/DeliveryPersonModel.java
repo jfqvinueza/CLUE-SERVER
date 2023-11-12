@@ -1,20 +1,21 @@
-package com.groupfour.clueserver.customer;
+package com.groupfour.clueserver.deliveryPerson;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
 import lombok.Data;
 
 @Data
 @Entity
-public class CustomerModel {
+public class DeliveryPersonModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long id;
-    private String deliveryAdress;
-    private String listPaymentMethod;
+    private Integer id;
+    private String deliveryPersonName;
+    private long deliveryPersonIDNumber;
+    private String deliveryHistory;
+
+
 }
