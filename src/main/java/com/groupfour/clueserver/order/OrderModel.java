@@ -15,7 +15,7 @@ import lombok.Data;
 public class OrderModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private long id;
+    private Integer id;
     private String orderItems;
     private String deliveryAddress;
     @Temporal(TemporalType.TIMESTAMP)

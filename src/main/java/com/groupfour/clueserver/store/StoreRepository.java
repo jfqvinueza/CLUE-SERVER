@@ -1,5 +1,10 @@
 package com.groupfour.clueserver.store;
 
-public class StoreRepository {
-    
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+
+public interface StoreRepository extends CrudRepository<StoreModel, Integer>{
+        List<StoreModel> findAll();
 }

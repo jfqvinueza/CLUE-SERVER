@@ -1,5 +1,9 @@
 package com.groupfour.clueserver.purchaseList;
 
-public class PurchaseListRepository {
-    
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface PurchaseListRepository extends CrudRepository<PurchaseListModel, Integer> {
+    List<PurchaseListModel> findAll();
 }

@@ -1,5 +1,9 @@
 package com.groupfour.clueserver.inventory;
 
-public class InventoryRepository {
-    
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface InventoryRepository extends CrudRepository<InventoryModel, Integer>{
+    List<InventoryModel> findAll();
 }

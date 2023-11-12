@@ -15,7 +15,7 @@ import lombok.Data;
 public class ComentAndRatingModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long id;
+    private Integer comentAndRatingId;
     private String commentText;
     private long rating;
     private long customerID;

@@ -1,5 +1,9 @@
 package com.groupfour.clueserver.shoppingCar;
 
-public class ShoppingCarRepository {
-    
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface ShoppingCarRepository extends CrudRepository<ShoppingCarModel, Integer>{
+    List<ShoppingCarModel>findAll();
 }

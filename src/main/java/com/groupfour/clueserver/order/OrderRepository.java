@@ -1,5 +1,9 @@
 package com.groupfour.clueserver.order;
 
-public class OrderRepository {
-    
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface OrderRepository extends CrudRepository<OrderModel, Integer> {
+    List<OrderModel> findAll();
 }

@@ -11,6 +11,6 @@ import lombok.Data;
 public class CategoryProductModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Integer id;
+    private Integer categoryProductId;
     private String nameCategory;
 }

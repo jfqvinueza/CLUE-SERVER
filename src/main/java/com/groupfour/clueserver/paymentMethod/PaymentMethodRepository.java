@@ -1,5 +1,9 @@
 package com.groupfour.clueserver.paymentMethod;
 
-public class PaymentMethodRepository {
-    
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface PaymentMethodRepository extends CrudRepository<PaymentMethodModel, Integer>{
+    List<PaymentMethodModel> findAll();
 }

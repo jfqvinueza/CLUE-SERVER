@@ -14,7 +14,7 @@ import lombok.Data;
 public class CustomerModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Long id;
+    private Integer customerId;
     private String deliveryAdress;
     private String listPaymentMethod;
 }
