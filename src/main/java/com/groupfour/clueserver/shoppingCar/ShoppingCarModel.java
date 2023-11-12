@@ -2,7 +2,6 @@ package com.groupfour.clueserver.shoppingCar;
 
 import com.groupfour.clueserver.product.ProductModel;
 
-import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
