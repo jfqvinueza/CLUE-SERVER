@@ -1,11 +1,19 @@
 package com.groupfour.clueserver.user;
 
+import java.util.List;
+
+import com.groupfour.clueserver.comentAndRating.ComentAndRatingModel;
+import com.groupfour.clueserver.deliveryAddresses.DeliveryAddressesModel;
+import com.groupfour.clueserver.order.OrderModel;
+import com.groupfour.clueserver.paymentMethod.PaymentMethodModel;
 import com.groupfour.clueserver.rol.RolModel;
+import com.groupfour.clueserver.store.StoreModel;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import lombok.Data;
 
 @Data
@@ -21,6 +29,17 @@ public class UserModel {
     private String password;
     private String numberPhone;
     private byte profilePicture;
+    @OneToMany(mappedBy = "userModelId")
+    private List<ComentAndRatingModel> comentsAndRatings;
+    @OneToMany(mappedBy = "userId")
+    private List<DeliveryAddressesModel> deliveryAdresses;
+    @OneToMany(mappedBy = "userId")
+    private List<PaymentMethodModel> paymentMethods;
+    @OneToMany(mappedBy = "userId")
+    private List<StoreModel> stores;
+    @OneToMany(mappedBy = "userId")
+    private List<OrderModel> orders;
+
 
         // =============METHODS==============
     // =============GET===============

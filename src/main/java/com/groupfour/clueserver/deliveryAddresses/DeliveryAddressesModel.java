@@ -1,4 +1,4 @@
-package com.groupfour.clueserver.paymentMethod;
+package com.groupfour.clueserver.deliveryAddresses;
 
 import com.groupfour.clueserver.user.UserModel;
 
@@ -12,14 +12,13 @@ import lombok.Data;
 
 @Data
 @Entity
-public class PaymentMethodModel {
+public class DeliveryAddressesModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Integer id;
-    private Boolean transfer;
-    private Boolean cash;
+    private Integer deliveryAddressesId;
+    private String deliveryAddress;
+    private String descritionReference;
     @ManyToOne
     @JoinColumn(name = "user_id")
     private UserModel userId;
-    
 }

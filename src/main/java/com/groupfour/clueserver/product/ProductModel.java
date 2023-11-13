@@ -1,6 +1,7 @@
 package com.groupfour.clueserver.product;
 
 import com.groupfour.clueserver.categoryProduct.CategoryProductModel;
+import com.groupfour.clueserver.store.StoreModel;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,8 +20,13 @@ public class ProductModel {
     private String productName;
     private String description;
     private float price;
-    private CategoryProductModel categoryProductId;
     private long stockQuantity;
     private String barcode;
+    @ManyToOne
+    @JoinColumn(name = "categoryProduct_id")
+    private CategoryProductModel categoryProductId;
+    @ManyToOne
+    @JoinColumn(name = "store_id")
+    private StoreModel storeId;
 
 }

@@ -3,11 +3,15 @@ package com.groupfour.clueserver.store;
 import java.util.List;
 
 import com.groupfour.clueserver.product.ProductModel;
+import com.groupfour.clueserver.user.UserModel;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import lombok.Data;
 
 @Data
@@ -22,6 +26,12 @@ public class StoreModel {
     private String closeTimeStore;
     private List<ProductModel> productCatalog;
     private String storeContactInformation;
+    @ManyToOne
+    @JoinColumn(name = "store_id")
+    private UserModel userId;
+    @OneToMany(mappedBy = "storeId")
+    private List<ProductModel> products;
+    
 
     // =============METHODS==============
     // =============GET===============
