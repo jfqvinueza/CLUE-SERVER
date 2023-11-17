@@ -23,7 +23,7 @@ services:
     volumes:
       - pg_clue_data:/var/lib/postgresql/data/pgdata
     networks:
-      - tendencias_instituto_net
+      - clue_net
            
 volumes:
   pg_clue_data:
