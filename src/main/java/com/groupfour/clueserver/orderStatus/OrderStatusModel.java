@@ -1,6 +1,6 @@
 package com.groupfour.clueserver.orderStatus;
 
-import com.groupfour.clueserver.customer.CustomerModel;
+// import com.groupfour.clueserver.customer.CustomerModel;
 import com.groupfour.clueserver.order.OrderModel;
 
 import jakarta.persistence.Entity;
@@ -19,7 +19,7 @@ public class OrderStatusModel {
     private Integer id;
     private String nameStatus;
     private String description;
-    private CustomerModel customerId;
+    // private CustomerModel customerId;
     @ManyToOne
     @JoinColumn(name = "order_id")
     private OrderModel orderId;

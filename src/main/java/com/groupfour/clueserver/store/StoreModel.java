@@ -25,10 +25,9 @@ public class StoreModel {
     private String storeAddress;
     private String openTimeStore;
     private String closeTimeStore;
-    private List<ProductModel> productCatalog;
     private String storeContactInformation;
     @ManyToOne
-    @JoinColumn(name = "store_id")
+    @JoinColumn(name = "user_id")
     private UserModel userId;
     @OneToMany(mappedBy = "storeId")
     private List<ProductModel> products;
@@ -57,9 +56,6 @@ public class StoreModel {
         return this.closeTimeStore;
     }
 
-    public List<ProductModel> getProductCatalog() {
-        return this.productCatalog;
-    }
 
     public String getStoreContactInformation() {
         return this.storeContactInformation;
@@ -84,10 +80,6 @@ public class StoreModel {
 
     public void setCloseTimeStore(String newCloseTimeStore) {
         this.closeTimeStore = newCloseTimeStore;
-    }
-
-    public void setProductCatalog(List<ProductModel> newProductCatalog) {
-        this.productCatalog = newProductCatalog;
     }
 
     public void setStoreContactInformation(String newStoreContactInformation) {
