@@ -6,7 +6,6 @@ import com.groupfour.clueserver.comentAndRating.ComentAndRatingModel;
 import com.groupfour.clueserver.deliveryAddresses.DeliveryAddressesModel;
 import com.groupfour.clueserver.order.OrderModel;
 import com.groupfour.clueserver.paymentMethod.PaymentMethodModel;
-import com.groupfour.clueserver.rol.RolModel;
 import com.groupfour.clueserver.store.StoreModel;
 
 import jakarta.persistence.Entity;
