@@ -13,7 +13,7 @@ import lombok.Data;
 public class ShoppingCarModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Integer id;
+    private Integer soppingCarId;
     private ProductModel productId;
     private float totalAmount;
 }

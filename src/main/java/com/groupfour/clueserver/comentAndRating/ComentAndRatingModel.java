@@ -2,7 +2,6 @@ package com.groupfour.clueserver.comentAndRating;
 
 import java.sql.Date;
 
-import org.hibernate.annotations.ManyToAny;
 
 import com.groupfour.clueserver.user.UserModel;
 
@@ -26,7 +25,7 @@ public class ComentAndRatingModel {
     private long rating;
     private long customerID;
     private long productID;
-    @Temporal(TemporalType.TIMESTAMP)
+    @Temporal(TemporalType.DATE)
     private Date datePosted;
     @ManyToOne
     @JoinColumn(name = "user_id")

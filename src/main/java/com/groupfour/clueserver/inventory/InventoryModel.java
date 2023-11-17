@@ -15,8 +15,8 @@ import lombok.Data;
 public class InventoryModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Integer id;
-    @Temporal(TemporalType.TIMESTAMP)
+    private Integer inventoryId;
+    @Temporal(TemporalType.DATE)
     private Date inventoryDate;
     private Long storeID;
     private String inventoryDescription;

@@ -24,7 +24,6 @@ public class UserModel {
     private Integer userId;
     private String firstName;
     private String lastName;
-    private RolModel roleId;
     private String email;
     private String password;
     private String numberPhone;
@@ -52,9 +51,7 @@ public class UserModel {
     public String getUserLastName() {
         return this.lastName;
     }
-    public RolModel getRoleId() {
-        return this.roleId;
-    }
+
     public String getEmail() {
         return this.email;
     }
@@ -77,9 +74,7 @@ public class UserModel {
     public void setUserLastName(String newLastName) {
         this.lastName=newLastName;
     }
-    public void setRoleId(RolModel newRoleId) {
-        this.roleId=newRoleId;
-    }
+
     public void setEmail(String newEmail) {
         this.email=newEmail;
     }

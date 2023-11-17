@@ -15,8 +15,8 @@ import lombok.Data;
 public class PurchaseListModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Integer id;
-    @Temporal(TemporalType.TIMESTAMP)
+    private Integer purchaseListId;
+    @Temporal(TemporalType.DATE)
     private Date purchaseDate;
     private long orderNumber;
     private float totalAmount;

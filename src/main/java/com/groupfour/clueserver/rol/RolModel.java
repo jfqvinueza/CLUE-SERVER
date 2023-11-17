@@ -11,7 +11,7 @@ import lombok.Data;
 public class RolModel {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    private Integer id;
+    private Integer rolId;
     private boolean storeClerk;
     private boolean customer;
     private boolean delivery;

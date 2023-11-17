@@ -2,6 +2,7 @@ package com.groupfour.clueserver.store;
 
 import java.util.List;
 
+import com.groupfour.clueserver.order.OrderModel;
 import com.groupfour.clueserver.product.ProductModel;
 import com.groupfour.clueserver.user.UserModel;
 
@@ -31,7 +32,8 @@ public class StoreModel {
     private UserModel userId;
     @OneToMany(mappedBy = "storeId")
     private List<ProductModel> products;
-    
+    @OneToMany(mappedBy = "storeId")
+    private List<OrderModel> orders;
 
     // =============METHODS==============
     // =============GET===============
@@ -62,32 +64,33 @@ public class StoreModel {
     public String getStoreContactInformation() {
         return this.storeContactInformation;
     }
-        // =============SET===============
+
+    // =============SET===============
     public void setStoreId(Integer newStoreId) {
-        this.storeId=newStoreId;
+        this.storeId = newStoreId;
     }
 
     public void setStoreName(String newStoreName) {
-        this.storeName=newStoreName;
+        this.storeName = newStoreName;
     }
 
     public void setStoreAddress(String newStoreAddress) {
-        this.storeAddress=newStoreAddress;
+        this.storeAddress = newStoreAddress;
     }
 
     public void setOpenTimeStore(String newOpenTimeStore) {
-        this.openTimeStore=newOpenTimeStore;
+        this.openTimeStore = newOpenTimeStore;
     }
 
     public void setCloseTimeStore(String newCloseTimeStore) {
-        this.closeTimeStore=newCloseTimeStore;
+        this.closeTimeStore = newCloseTimeStore;
     }
 
     public void setProductCatalog(List<ProductModel> newProductCatalog) {
-        this.productCatalog=newProductCatalog;
+        this.productCatalog = newProductCatalog;
     }
 
     public void setStoreContactInformation(String newStoreContactInformation) {
-        this.storeContactInformation=newStoreContactInformation;
+        this.storeContactInformation = newStoreContactInformation;
     }
 }
