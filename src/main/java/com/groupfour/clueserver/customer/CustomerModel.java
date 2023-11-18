@@ -10,7 +10,7 @@ import lombok.Data;
 @Entity
 public class CustomerModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer customerId;
     private String deliveryAdress;
     private String listPaymentMethod;

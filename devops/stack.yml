@@ -11,7 +11,7 @@ services:
         protocol: tcp
         mode: host
     networks:
-      - desarrollo_net
+      - clue_net
   dbclases:
     image: postgres:15.0-bullseye
     environment:
@@ -23,14 +23,14 @@ services:
     volumes:
       - pg_clue_data:/var/lib/postgresql/data/pgdata
     networks:
-      - desarrollo_net
+      - clue_net
            
 volumes:
   pg_clue_data:
     external: true
 
 networks:
-  desarrollo_net:
+  clue_net:
     external: true
 
 secrets:
