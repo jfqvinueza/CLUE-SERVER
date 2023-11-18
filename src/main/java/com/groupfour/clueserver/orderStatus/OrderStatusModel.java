@@ -15,7 +15,7 @@ import lombok.Data;
 @Entity
 public class OrderStatusModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String nameStatus;
     private String description;

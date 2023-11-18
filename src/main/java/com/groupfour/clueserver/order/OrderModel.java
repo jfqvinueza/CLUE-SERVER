@@ -22,7 +22,7 @@ import lombok.Data;
 @Entity
 public class OrderModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String orderItems;
     private String deliveryAddress;

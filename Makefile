@@ -5,4 +5,4 @@ volume:
 deploy:
 	@ docker stack deploy --with-registry-auth -c devops/stack.yml clue
 rm:
-	@ docker stack rm 
+	@ docker stack rm clue

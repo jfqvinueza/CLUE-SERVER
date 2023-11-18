@@ -14,7 +14,7 @@ import lombok.Data;
 @Entity
 public class DeliveryAddressesModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer deliveryAddressesId;
     private String deliveryAddress;
     private String descritionReference;

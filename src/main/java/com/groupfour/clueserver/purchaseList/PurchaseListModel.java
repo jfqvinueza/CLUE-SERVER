@@ -14,7 +14,7 @@ import lombok.Data;
 @Entity
 public class PurchaseListModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer purchaseListId;
     @Temporal(TemporalType.DATE)
     private Date purchaseDate;

@@ -10,7 +10,7 @@ import lombok.Data;
 @Entity
 public class DeliveryPersonModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer deliveryersonId;
     private String deliveryPersonName;
     private long deliveryPersonIDNumber;

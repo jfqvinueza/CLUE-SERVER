@@ -18,7 +18,7 @@ import lombok.Data;
 @Entity
 public class DeliveriesModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long DeliveriesId;
     private String assignedDeliveryPerson;
     @Temporal(TemporalType.DATE)

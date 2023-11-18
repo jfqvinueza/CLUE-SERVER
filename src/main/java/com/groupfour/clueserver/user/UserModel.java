@@ -19,14 +19,14 @@ import lombok.Data;
 @Entity
 public class UserModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer userId;
     private String firstName;
     private String lastName;
     private String email;
     private String password;
     private String numberPhone;
-    private byte profilePicture;
+    private String profilePicture;
     @OneToMany(mappedBy = "userModelId")
     private List<ComentAndRatingModel> comentsAndRatings;
     @OneToMany(mappedBy = "userId")
@@ -60,7 +60,7 @@ public class UserModel {
     public String getNumberPhone() {
         return this.numberPhone;
     }
-    public byte getProfilePicture() {
+    public String getProfilePicture() {
         return this.profilePicture;
     }
     // =========SET=======================
@@ -83,7 +83,7 @@ public class UserModel {
     public void setNumberPhone(String newNumberPhone) {
         this.numberPhone=newNumberPhone;
     }
-    public void setProfilePicture(byte newProfilePicture) {
+    public void setProfilePicture(String newProfilePicture) {
         this.profilePicture=newProfilePicture;
     }
     //====================================

@@ -19,7 +19,7 @@ import lombok.Data;
 @Entity
 public class StoreModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer storeId;
     private String storeName;
     private String storeAddress;

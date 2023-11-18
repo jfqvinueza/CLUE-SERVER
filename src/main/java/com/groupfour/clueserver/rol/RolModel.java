@@ -10,7 +10,7 @@ import lombok.Data;
 @Entity
 public class RolModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer rolId;
     private boolean storeClerk;
     private boolean customer;

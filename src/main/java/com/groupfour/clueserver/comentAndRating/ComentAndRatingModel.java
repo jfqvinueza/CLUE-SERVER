@@ -19,7 +19,7 @@ import lombok.Data;
 @Entity
 public class ComentAndRatingModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer comentAndRatingId;
     private String commentText;
     private long rating;
@@ -30,5 +30,4 @@ public class ComentAndRatingModel {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private UserModel userModelId;
-
 }

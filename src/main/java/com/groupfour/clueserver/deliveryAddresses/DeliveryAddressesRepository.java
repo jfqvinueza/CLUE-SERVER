@@ -1,5 +1,9 @@
 package com.groupfour.clueserver.deliveryAddresses;
 
-public class DeliveryAddressesRepository {
-    
+import org.springframework.data.repository.CrudRepository;
+import java.util.List;
+
+
+public interface DeliveryAddressesRepository extends CrudRepository<DeliveryAddressesModel, Integer> {
+    List<DeliveryAddressesModel> findAll();
 }

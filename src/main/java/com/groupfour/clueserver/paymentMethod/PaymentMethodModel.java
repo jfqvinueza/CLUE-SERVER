@@ -14,7 +14,7 @@ import lombok.Data;
 @Entity
 public class PaymentMethodModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private Boolean transfer;
     private Boolean cash;

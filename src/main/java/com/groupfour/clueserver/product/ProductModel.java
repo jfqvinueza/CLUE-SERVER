@@ -1,6 +1,7 @@
 package com.groupfour.clueserver.product;
 
 import com.groupfour.clueserver.categoryProduct.CategoryProductModel;
+import com.groupfour.clueserver.shoppingCar.ShoppingCarModel;
 import com.groupfour.clueserver.store.StoreModel;
 
 import jakarta.persistence.Entity;
@@ -15,7 +16,7 @@ import lombok.Data;
 @Entity
 public class ProductModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
     private String productName;
     private String description;
@@ -23,10 +24,13 @@ public class ProductModel {
     private long stockQuantity;
     private String barcode;
     @ManyToOne
+    @JoinColumn(name = "store_id")
+    private StoreModel storeId;
+    @ManyToOne
     @JoinColumn(name = "categoryProduct_id")
     private CategoryProductModel categoryProductId;
     @ManyToOne
-    @JoinColumn(name = "store_id")
-    private StoreModel storeId;
+    @JoinColumn(name = "shoppingCard_id")
+    private ShoppingCarModel shoppingCarId;
 
 }

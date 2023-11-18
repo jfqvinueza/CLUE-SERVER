@@ -14,7 +14,7 @@ import lombok.Data;
 @Entity
 public class InventoryModel {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer inventoryId;
     @Temporal(TemporalType.DATE)
     private Date inventoryDate;
