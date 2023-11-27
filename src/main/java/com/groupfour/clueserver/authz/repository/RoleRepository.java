@@ -1,9 +1,9 @@
-package pedidos.pedidos.core.authz.repository;
+package com.groupfour.clueserver.authz.repository;
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-import pedidos.pedidos.core.authz.entity.Role;
+import com.groupfour.clueserver.authz.entity.Role;
 
 
 

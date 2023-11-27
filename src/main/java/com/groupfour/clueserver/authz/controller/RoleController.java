@@ -1,4 +1,4 @@
-package pedidos.pedidos.core.authz.controller;
+package com.groupfour.clueserver.authz.controller;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,8 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import pedidos.pedidos.core.authz.entity.Role;
-import pedidos.pedidos.core.authz.service.RoleService;
+import com.groupfour.clueserver.authz.entity.Role;
+import com.groupfour.clueserver.authz.service.RoleService;
 
 @Tag(name = "Controlador Role (Roles)", description = "Tabla roles")
 @RestController

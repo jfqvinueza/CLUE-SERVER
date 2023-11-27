@@ -1,4 +1,4 @@
-package pedidos.pedidos.core.authz.conf;
+package com.groupfour.clueserver.authz.conf;
 
 import java.io.IOException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -9,8 +9,8 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpFilter;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import pedidos.pedidos.core.authz.entity.User;
-import pedidos.pedidos.core.authz.service.UserService;
+import com.groupfour.clueserver.authz.entity.User;
+import com.groupfour.clueserver.authz.service.UserService;
 
 
 public class JWTAuthorizationFilter  extends HttpFilter {

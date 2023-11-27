@@ -1,4 +1,4 @@
-package pedidos.pedidos.core.authz.entity;
+package com.groupfour.clueserver.authz.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

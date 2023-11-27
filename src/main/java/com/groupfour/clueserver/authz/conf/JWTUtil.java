@@ -1,4 +1,4 @@
-package pedidos.pedidos.core.authz.conf;
+package com.groupfour.clueserver.authz.conf;
 
 import java.sql.Date;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package pedidos.pedidos.core.authz.service;
+package com.groupfour.clueserver.authz.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,9 +6,9 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import pedidos.pedidos.core.authz.entity.Authority;
-import pedidos.pedidos.core.authz.entity.Role;
-import pedidos.pedidos.core.authz.repository.RoleRepository;
+import com.groupfour.clueserver.authz.entity.Authority;
+import com.groupfour.clueserver.authz.entity.Role;
+import com.groupfour.clueserver.authz.repository.RoleRepository;
 
 
 @Service

@@ -1,4 +1,4 @@
-package pedidos.pedidos.core.authz.conf;
+package com.groupfour.clueserver.authz.conf;
 
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
@@ -7,7 +7,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.transaction.Transactional;
-import pedidos.pedidos.core.authz.entity.User;
+import com.groupfour.clueserver.authz.entity.User;
 
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;
@@ -24,7 +24,7 @@ import java.util.Base64;
 import java.util.Collection;
 import java.util.Date;
 
-import pedidos.pedidos.core.authz.service.UserService;
+import com.groupfour.clueserver.authz.service.UserService;
 
 public class JWTAuthenticationFilter extends UsernamePasswordAuthenticationFilter{
     private AuthenticationManager authenticationManager;

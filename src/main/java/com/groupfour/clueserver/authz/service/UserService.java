@@ -1,4 +1,4 @@
-package pedidos.pedidos.core.authz.service;
+package com.groupfour.clueserver.authz.service;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,10 +13,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import jakarta.transaction.Transactional;
-import pedidos.pedidos.core.authz.entity.Authority;
-import pedidos.pedidos.core.authz.entity.Role;
-import pedidos.pedidos.core.authz.entity.User;
-import pedidos.pedidos.core.authz.repository.UserRepository;
+import com.groupfour.clueserver.authz.entity.Authority;
+import com.groupfour.clueserver.authz.entity.Role;
+import com.groupfour.clueserver.authz.entity.User;
+import com.groupfour.clueserver.authz.repository.UserRepository;
 
 
 @Service

@@ -1,4 +1,4 @@
-package pedidos.pedidos.core.authz.entity;
+package com.groupfour.clueserver.authz.entity;
 import java.util.List;
 
 import jakarta.persistence.Column;

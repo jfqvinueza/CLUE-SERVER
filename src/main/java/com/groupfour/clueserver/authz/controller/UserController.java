@@ -1,4 +1,4 @@
-package pedidos.pedidos.core.authz.controller;
+package com.groupfour.clueserver.authz.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,11 +21,11 @@ import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import pedidos.pedidos.core.authz.conf.JWTUtil;
-import pedidos.pedidos.core.authz.entity.Authority;
-import pedidos.pedidos.core.authz.entity.User;
-import pedidos.pedidos.core.authz.service.AuthorityService;
-import pedidos.pedidos.core.authz.service.UserService;
+import com.groupfour.clueserver.authz.conf.JWTUtil;
+import com.groupfour.clueserver.authz.entity.Authority;
+import com.groupfour.clueserver.authz.entity.User;
+import com.groupfour.clueserver.authz.service.AuthorityService;
+import com.groupfour.clueserver.authz.service.UserService;
 
 @Tag(name = "Controlador User (Usuarios)", description = "Tabla users")
 @RestController

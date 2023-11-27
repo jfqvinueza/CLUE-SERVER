@@ -1,10 +1,10 @@
-package pedidos.pedidos.core.authz.repository;
+package com.groupfour.clueserver.authz.repository;
 import java.util.List;
 
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 
-import pedidos.pedidos.core.authz.entity.User;
+import com.groupfour.clueserver.authz.entity.User;
 
 
 public interface UserRepository extends CrudRepository <User, Long>{
