@@ -16,10 +16,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/app/user")
 @CrossOrigin({"*"})
-public class UserController {
+public class ClueUserController {
         //Consumir el servicio
     @Autowired
-    private UserService userService;
+    private ClueUserService userService;
 
     //Sub ruta para el create
     @PostMapping("/create")
