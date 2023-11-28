@@ -5,13 +5,20 @@ INSERT INTO authorities (name, endpoint) values ('comentAndRatingById_Read', 'GE
 INSERT INTO authorities (name, endpoint) values ('comentAndRating_Delete', 'DELETE:/api/comentAndRating/{id}/');
 INSERT INTO authorities (name, endpoint) values ('comentAndRating_Update', 'PUT:/api/comentAndRating/{id}/');
 INSERT INTO authorities (name, endpoint) values ('comentAndRating_PartialUpdate', 'PATCH:/api/comentAndRating/{id}/');
--- categorydeliveryAddresses
-INSERT INTO authorities (name, endpoint) values ('categorydeliveryAddresses_Write', 'POST:/api/categorydeliveryAddresses/');
-INSERT INTO authorities (name, endpoint) values ('categorydeliveryAddresses_Read', 'GET:/api/categorydeliveryAddresses/');
-INSERT INTO authorities (name, endpoint) values ('categorydeliveryAddressesById_Read', 'GET:/api/categorydeliveryAddresses/{id}/');
-INSERT INTO authorities (name, endpoint) values ('categorydeliveryAddresses_Delete', 'DELETE:/api/categorydeliveryAddresses/{id}/');
-INSERT INTO authorities (name, endpoint) values ('categorydeliveryAddresses_Update', 'PUT:/api/categorydeliveryAddresses/{id}/');
-INSERT INTO authorities (name, endpoint) values ('categorydeliveryAddresses_PartialUpdate', 'PATCH:/api/categorydeliveryAddresses/');
+-- categoryProduct
+INSERT INTO authorities (name, endpoint) values ('categoryProduct_Write', 'POST:/api/categoryProduct/');
+INSERT INTO authorities (name, endpoint) values ('categoryProduct_Read', 'GET:/api/categoryProduct/');
+INSERT INTO authorities (name, endpoint) values ('categoryProductById_Read', 'GET:/api/categoryProduct/{id}/');
+INSERT INTO authorities (name, endpoint) values ('categoryProduct_Delete', 'DELETE:/api/categoryProduct/{id}/');
+INSERT INTO authorities (name, endpoint) values ('categoryProduct_Update', 'PUT:/api/categoryProduct/{id}/');
+INSERT INTO authorities (name, endpoint) values ('categoryProduct_PartialUpdate', 'PATCH:/api/categoryProduct/');
+-- deliveryAddresses
+INSERT INTO authorities (name, endpoint) values ('deliveryAddresses_Write', 'POST:/api/deliveryAddresses/');
+INSERT INTO authorities (name, endpoint) values ('deliveryAddresses_Read', 'GET:/api/deliveryAddresses/');
+INSERT INTO authorities (name, endpoint) values ('deliveryAddressesById_Read', 'GET:/api/deliveryAddresses/{id}/');
+INSERT INTO authorities (name, endpoint) values ('deliveryAddresses_Delete', 'DELETE:/api/deliveryAddresses/{id}/');
+INSERT INTO authorities (name, endpoint) values ('deliveryAddresses_Update', 'PUT:/api/deliveryAddresses/{id}/');
+INSERT INTO authorities (name, endpoint) values ('deliveryAddresses_PartialUpdate', 'PATCH:/api/deliveryAddresses/');
 -- customer
 INSERT INTO authorities (name, endpoint) values ('Authority_Write', 'POST:/api/authority/');
 INSERT INTO authorities (name, endpoint) values ('Authority_Read', 'GET:/api/authority/');
