@@ -130,4 +130,4 @@ INSERT INTO authorities (name, endpoint) values ('comentAndRating_Update', 'PUT:
 INSERT INTO authorities (name, endpoint) values ('comentAndRating_PartialUpdate', 'PATCH:/app/comentAndRating/{id}/');
 INSERT INTO authorities (name, endpoint) values ('comentAndRatingPdf_Read', 'GET:/app/comentAndRating/pdf/{id}/');
 
-INSERT INTO roles_autorities SELECT 1, num FROM generate_series(39, 152) AS num;
+-- INSERT INTO roles_autorities SELECT 1, num FROM generate_series(39, 152) AS num;
